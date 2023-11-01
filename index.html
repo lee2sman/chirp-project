@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>
+		  CHIRP
+		</title>
+	</head>
+	<body>
+		<div class="grid-container">
+			<div class="left-col">
+				<p>
+					<input type="text" placeholder="Enter chirp" id="textInput">
+				</p>
+				<button class="my-button" onclick="addDiv(); emptyText()">Add a chirp</button>
+				<p>
+					<input type="text" placeholder="Image url" id="imgInput">
+				</p>
+				<button class="my-button" onclick="addImage(); emptyImg()">Add an image</button>
+
+			</div>
+
+			<div class="right-col" id="content-area">
+			</div>
+		</div>
+		
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+html,
+body {
+	height: 100%;
+	margin: 0px;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+body {
+}
+
+.paragraph-text {
+	color: blue;
+}
+
+.my-button {
+	border: 0px;
+	background-color: #fdfcdc;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+.grid-container {
+	/*set the positioning of the grid*/
+	/*so that it fills the screen*/
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+
+	/*set display to grid*/
+	display: grid;
+	grid-template-columns: 250px auto;
+	grid-template-rows: 100% 100%;
+}
+
+.left-col {
+	/*style left column*/
+	padding: 15px;
+	background-color: #0081a7;
+}
+
+.right-col {
+	/*style right column*/
+	padding: 15px;
+	background-color: #00afb9;
+}
+
+/*format for each chirp message*/
+.auto-div {
+	/*15px on top and botton*/
+	/*0 on left and right*/
+	margin: 15px 0;
+
+	padding: 10px;
+
+	background-color: #f07167;
+	border: 3px solid #fdfcdc;
+}
+.right {
+margin: -15px 0;
+
+padding: 3px;
+text-align:right;
+
+}
