@@ -1,20 +1,32 @@
+let darkMode = false;
+function getTime() {
+  let currentDate = new Date();
+  let hours = currentDate.getHours();
+  if (hours > 12) {
+    hours = hours-12 //YOU CAN DECLARE VARIABLES IN IF STATEMENTS?!?!?!?! -lex
+  }
+  // let minute = currentDate.getMinutes();
+  let minute = 6;
+  if (minute < 10) {
+    minute = "0" + minute
+  }
+  
+  let timeString = hours + ":" + minute
+  if (currentDate.getHours < 12) {
+    timeString = timeString + "am";
+  } else {
+    timeString = timeString + "pm";
+  }
+  
+  let time = timeString;
+
+  
+  return timeString;
+} 
+
 
 function addDiv() {
-let currentDate = new Date();
-let hours = currentDate.getHours();
-
-
-let time = hours + ":" + currentDate.getMinutes();
-if (minute<10) {
-  let time = hours + ":0" + currentDate.getMinutes();
-}
-if (hours>12) {
-  hours = hours-12
-  let time = hours +"pm" + ":0" + currentDate.getMinutes();
-} else {
-  let time = hours +"am" + ":0" + currentDate.getMinutes();
-
-}
+let time = getTime();
   //create a new P tag, save it in a variable
   let theNewDiv = document.createElement("div");
   let timeDiv = document.createElement("div");
@@ -45,7 +57,7 @@ let hours = currentDate.getHours();
 if(hours>12){
   hours = hours-12;
 }
-let time = hours + ":" + currentDate.getMinutes();
+let time = getTime();
   //create a new P tag, save it in a variable
   let theNewDiv = document.createElement("div");
   let timeDiv = document.createElement("div");
@@ -91,7 +103,7 @@ let time = hours + ":" + currentDate.getMinutes();
       emptyImg();  //Clear the input
     }
   });
-}
+
 
 
   function emptyText()
@@ -102,8 +114,39 @@ let time = hours + ":" + currentDate.getMinutes();
   {
     document.getElementById("imgInput").value = ""; //Clears input box for image links
   }
+}
 
-  function makeDark()
-  {
-    <link rel="stylesheet" type="text/css" href="darkMode.css"></link>
-  }
+  function makeDark() {
+    if(!darkMode){
+      darkMode = true;
+      document.getElementsByTagName("link")[0].setAttribute("href", "darkMode.css");  
+    } else {
+      
+      darkMode = false;
+      document.getElementsByTagName("link")[0].setAttribute("href", "style.css");  
+
+    }
+    
+  //   <link rel="stylesheet" type="text/css" href="darkMode.css"></link>
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//secret corner of words
+//ooOOOooooo seeeeecreeeetttttttt
