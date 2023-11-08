@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>
+		  CHIRP
+		</title>
+	
+	</head>
+	<body>
+	
+	
+	<div class="grid-container">
+			<div class="left-col">
+				<p>
+					<input type="text" placeholder="Enter chirp" id="textInput">
+				</p>
+				<button class="my-button" onclick="addDiv(); emptyText()">Add a chirp</button>
+				<p>
+					<input type="text" placeholder="Image url" id="imgInput">
+				</p>
+				<button class="my-button" onclick="addImage(); emptyImg()">Add an image</button>
+
+			</div>
+
+			<div class="right-col" id="content-area">
+			</div>
+		</div>
+	
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+
+    <h1>Welcome to CHIRP!</h1>
+		<div class="about-chirp">
+			<h2>About Chirp</h2>
+			<p>Chirp is a bare bones social media project that has the ability to post images and text.</p>
+			<p>When making a post, the program will send out a sound cue that lets you know your post is up.</p>
+			<p>Honestly we did not know what else to put in here.</p>
+		</div>
+	<h4>Please read and agree to the code of conduct to continue.</h4>
+		<div class="conduct-rules">
+			<h2>Code of Conduct</h2> 
+			<h3>Free speech absolutism</h3>
+			<p>There will be no limit on free speech be it controversial, political, offensive, and a call to action.</p>
+			<h3>Create a toxic community</h3>
+			<p>Inactive members after 2 weeks will have their accounts deleted</p>
+			<p>If you don’t insult somebody for 2 weeks you will also be banned and have your account deleted.</p>
+			<p>On the insults messages you send if you receive likes your account is awarded points.</p>
+			<p>If somebody tries to rat you out or dox someone else It will not only result in a ban but the website will dox you back and send local citizens who use the app to assault you in the morning as you leave for work between the hours and only between 8-10am.</p>
+			<h3>Have genuine interest and joy in the community.</h3>
+			<p>Have fun, you know it’s a toxic place if you have a problem, close the site and shut off your computer. Try to respect these people like your own pals, being toxic can be fun if you all know it’s a joke.</p>
+		</div>
+	
+	
+	<!--Put the button to agree inside the modal -->
+	<button class="button" id ="agree" onclick="iAgree()"> I Agree</button>
+</div>
+<script src="script.js"></script>
+	</body>
+</html>
