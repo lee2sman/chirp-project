@@ -93,6 +93,19 @@ let time = hours + ":" + currentDate.getMinutes();
   {
     document.getElementById("imgInput").value = ""; //Clears input box for image links
   }
-
-
 }
+
+window.onload = function() {
+  var modal = document.getElementById('myModal');
+  function closeModal() {
+    modal.style.display = 'none';
+  }
+  modal.style.display = 'block';
+  var button = document.getElementById('agree');
+  button.onclick = closeModal;
+};
+
+
+
+
+
